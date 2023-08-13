@@ -8,7 +8,7 @@
 #include "Components/ActorComponent.h"
 #include "GameplayStatsComponent.generated.h"
 
-DECLARE_MULTICAST_DELEGATE(FOnStatsChangedDelegate);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FOnStatsChangedDelegate);
 
 UCLASS(ClassGroup=(Stats), meta=(BlueprintSpawnableComponent))
 class GAMEPLAYTAGSTATS_API UGameplayStatsComponent : public UActorComponent, public IGameplayTagStackInterface
