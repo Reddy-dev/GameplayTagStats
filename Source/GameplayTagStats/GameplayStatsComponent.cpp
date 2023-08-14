@@ -52,6 +52,11 @@ int32 UGameplayStatsComponent::GetTagStack_Implementation(FGameplayTag StatTag) 
 	return GameplayTagStackContainer.GetStackCount(StatTag);
 }
 
+FGameplayTagStackContainer UGameplayStatsComponent::GetTagStackContainer_Implementation() const
+{
+	return GameplayTagStackContainer;
+}
+
 void UGameplayStatsComponent::OnRep_GameplayTagStackContainer()
 {
 	if (OnStatChanged.IsBound())

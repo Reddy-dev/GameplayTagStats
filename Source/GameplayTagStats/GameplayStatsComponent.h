@@ -24,6 +24,7 @@ public:
 	virtual void RemoveFromTagStack_Implementation(FGameplayTag StatTag, int32 Value) override;
 	virtual bool HasTagStack_Implementation(FGameplayTag StatTag) const override;
 	virtual int32 GetTagStack_Implementation(FGameplayTag StatTag) const override;
+	virtual FGameplayTagStackContainer GetTagStackContainer_Implementation() const override;
 
 	UPROPERTY(BlueprintAssignable, Category = "Stats")
 	FOnStatsChangedDelegate OnStatChanged;
